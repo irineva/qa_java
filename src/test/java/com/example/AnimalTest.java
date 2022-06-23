@@ -45,7 +45,7 @@ public class AnimalTest {
         String expectedExceptionMessage = "Неизвестный вид животного, используйте значение Травоядное или Хищник";
         thrown.expect(Exception.class);
         thrown.expectMessage(expectedExceptionMessage);
-        animal.getFood("коть");
+        animal.getFood("котька");
     }
 
     @Test
