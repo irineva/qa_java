@@ -18,15 +18,22 @@ public class FelineTest {
     }
 
     @Mock
-    Animal animal;
+    Feline feline;
+
+//    @Test
+//    public void eatMeatTest() throws Exception {
+//        Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+//        List<String> actualList = feline.eatMeat();
+//        assertEquals(List.of("Животные", "Птицы", "Рыба"), actualList);
+//
+//    }
 
     @Test
     public void eatMeatTest() throws Exception {
         Feline feline = new Feline();
-        Mockito.when(animal.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        List<String> expectedList = List.of("Животные", "Птицы", "Рыба");
         List<String> actualList = feline.eatMeat();
-        assertEquals(List.of("Животные", "Птицы", "Рыба"), actualList);
-
+        assertEquals(expectedList, actualList);
     }
 
     @Test
