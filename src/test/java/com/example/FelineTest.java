@@ -17,8 +17,6 @@ public class FelineTest {
         MockitoAnnotations.initMocks(this);
     }
 
-    @Mock
-    Feline feline;
 
     @Test
     public void eatMeatTest() throws Exception {

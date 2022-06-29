@@ -49,8 +49,6 @@ public class LionTest {
         Lion lion = new Lion("Самец", feline);
         Mockito.when(feline.getFood("Хищник")).thenThrow(Exception.class);
         lion.getFood();
-        assertThrows(Exception.class, () -> lion.getFood());
-
     }
 
 }
